@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #4a90e2;
+  --accent-color: #ff5555;
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timer-input {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.time-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.time-inputs div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #357ac9;
+}
+
+.active-timers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timer-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.timer-card.ended {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.timer-time {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stop-btn {
+  background: var(--accent-color);
+  padding: 0.5rem 1rem;
+}
+
+.stop-btn:hover {
+  background: #d43c3c;
+}
